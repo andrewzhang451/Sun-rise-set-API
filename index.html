@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise and Sunset Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="dashboard">
+        <h1>Sunrise and Sunset Times</h1>
+        <button id="locate-btn">Use Current Location</button>
+        <select id="preset-locations">
+            <option value="34.052235,-118.243683">Los Angeles</option>
+            <option value="40.712776,-74.005974">New York</option>
+            <option value="51.507351,-0.127758">London</option>
+            <option value="35.689487,139.691711">Tokyo</option>
+            <option value="55.755825,37.617298">Moscow</option>
+        </select>
+        <div id="results">
+            <!-- Results will be injected here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
