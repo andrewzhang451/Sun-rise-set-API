@@ -49,6 +49,10 @@ function getSunriseSunset(lat, lng) {
 
 function displayResults(data, day) {
     const resultsDiv = document.getElementById('results');
+    if (day === 'Today') {
+        resultsDiv.innerHTML = '';
+    }
+    
     resultsDiv.innerHTML += `
         <div class="results-day">
             <h3>${day}</h3>
